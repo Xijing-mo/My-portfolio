@@ -4,85 +4,86 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" type="text/css" href="..\src\index.css" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" /> -->
     <title>React App (Portfolio)</title>
   </head>
 
-  <body style="margin: 0px; overflow-y: scroll;">
+  <body>
 
-    <nav style="background-color: rgba(255, 255, 255, 0.5); backdrop-filter: blur(15px); position: fixed; width: 100%; block-size: 44px;">
-      <ul style="list-style-type: none; display: flex; justify-content: flex-end; margin: 0px; height: 44px; align-items: center;">
-          <li style="margin-right: 40px;"><a href="#" style="text-decoration: none; color: #000;">Projects</a></li>
-          <li style="margin-right: 40px;"><a href="#" style="text-decoration: none; color: #000;">Blog</a></li>
-          <li style="margin-right: 40px;"><a href="#" style="text-decoration: none; color: #000;">Achievements</a></li>
+    <nav>
+      <ul class="menu-items">
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Achievements</a></li>
       </ul>
     </nav>
 
-    <main style="padding-top: 44px;">
-      <section style="height: 450px; display: flex; justify-content: center; align-items: center;">
-        <div style="height: 300px; width: 900px; flex-direction: row; display: flex;">
+    <main>
+      <section class="intro">
 
-          <!-- text -->
-          <div style="width: 60%;">
-            <strong style="font-family: Arial, Helvetica, sans-serif; font-size: 40px;">Hi there, this is CJ, </br>
-              a front-end developer</strong>
+        <div class="intro-content">
+          <div class="intro-text">
+            <strong>Hi there, this is CJ, </br> a front-end developer</strong>
             </br>
             </br>
             <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt</p>
             </br>
-            <ul style="list-style-type: none; display: flex; align-items: center; justify-content: flex-start; padding-left: 0px;">
-              <li style="margin-right: 20px;">
-                <figure style="margin: 0px; display:flex; justify-content: center;"><img src="../src/HTML5Logo.svg" alt="SVG Image" height="30px" width="30px"></figure>
-                <figcaption style="font-size: 10px; text-align: center;">HTML5</figcaption>
+            <ul>
+              <li>
+                <figure><img src="../src/HTML5Logo.svg" alt="SVG Image"></figure>
+                <figcaption>HTML5</figcaption>
               </li>
-              <li style="margin-right: 20px;">
-                <figure style="margin: 0px; display:flex; justify-content: center;"><img src="../src/JSLogo.svg" alt="SVG Image" height="30px" width="30px"></figure>
-                <figcaption style="font-size: 10px; text-align: center;">JavaScrpt</figcaption>
+              <li>
+                <figure><img src="../src/JSLogo.svg" alt="SVG Image"></figure>
+                <figcaption>JavaScrpt</figcaption>
               </li>
-              <li style="margin-right: 20px;">
-                <figure style="margin: 0px; display:flex; justify-content: center;"><img src="../src/CSS3Logo.svg" alt="SVG Image" height="30px" width="30px"></figure>
-                <figcaption style="font-size: 10px; text-align: center;">CSS3</figcaption>
+              <li>
+                <figure><img src="../src/CSS3Logo.svg" alt="SVG Image"></figure>
+                <figcaption>CSS3</figcaption>
               </li>
-              <li style="margin-right: 20px;">
-                <figure style="margin: 0px; display:flex; justify-content: center;"><img src="../src/FigmaLogo.svg" alt="SVG Image" height="30px" width="30px"></figure>
-                <figcaption style="font-size: 10px; text-align: center;">Figma</figcaption>
+              <li>
+                <figure><img src="../src/FigmaLogo.svg" alt="SVG Image"></figure>
+                <figcaption>Figma</figcaption>
               </li>
-              <li style="margin-right: 20px;">
-                <figure style="margin: 0px; display:flex; justify-content: center;"><img src="../src/VuejsLogo.svg" alt="SVG Image" height="30px" width="30px"></figure>
-                <figcaption style="font-size: 10px; text-align: center;">Vue.js</figcaption>
+              <li>
+                <figure><img src="../src/VuejsLogo.svg" alt="SVG Image"></figure>
+                <figcaption>Vue.js</figcaption>
               </li>
-              <li style="margin-right: 20px;">
-                <figure style="margin: 0px; display:flex; justify-content: center;"><img src="../src/ReactLogo.svg" alt="SVG Image" height="30px" width="30px"></figure>
-                <figcaption style="font-size: 10px; text-align: center;">React</figcaption>
+              <li>
+                <figure><img src="../src/ReactLogo.svg" alt="SVG Image"></figure>
+                <figcaption>React</figcaption>
               </li>
-              <li style="margin-right: 20px;">
-                <figure style="margin: 0px; display:flex; justify-content: center;"><img src="../src/ExpressjsLogo.svg" alt="SVG Image" height="30px" width="30px"></figure>
-                <figcaption style="font-size: 10px; text-align: center;">Express.js</figcaption>
+              <li>
+                <figure><img src="../src/ExpressjsLogo.svg" alt="SVG Image"></figure>
+                <figcaption>Express.js</figcaption>
               </li>
-              <li style="margin-right: 20px;">
-                <figure style="margin: 0px; display:flex; justify-content: center;"><img src="../src/MySQLLogo.svg" alt="SVG Image" height="30px" width="30px"></figure>
-                <figcaption style="font-size: 10px; text-align: center;">MySQL</figcaption>
+              <li>
+                <figure><img src="../src/MySQLLogo.svg" alt="SVG Image"></figure>
+                <figcaption>MySQL</figcaption>
               </li>
             </ul>
           </div>
 
-          <!-- image -->
-          <div style="width: 40%; display: flex; justify-content: center;">
+          <div class="intro-photo">
             <img src="../src/round-profile.png" height="100%">
           </div>
         </div>
 
       </section>
+
+      <section class="projects">
+        <div class="projects-content"> 
+          <div class="section-title">Recent projects</div>
+          <div class="projects-overview">
+            <article></article>
+            <article></article>
+          </div>
+          <div class="section-expand"><a href="#">View all</a></div>
+        </div>
+      </section>
     </main>
 
-    <div style="height: 400px;"></div>
+    <!-- for testing y scroll -->
+    <div class="test" style="height: 400px;"></div>
 
   </body>
 </html>

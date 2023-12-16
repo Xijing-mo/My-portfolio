@@ -1,0 +1,127 @@
+body {
+    margin: 0px; overflow-y: scroll;
+}
+
+nav {
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(15px);
+    position: fixed;
+    width: 100%;
+}
+
+.menu-items {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0px;
+    height: 44px;
+    align-items: center;
+}
+
+.menu-items li {
+    margin-right: 40px;
+}
+
+.menu-items a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* Self-introduction section */
+.intro {
+    height: 494px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 44px;
+}
+
+.intro-content {
+    height: 300px;
+    width: 900px;
+    flex-direction: row;
+    display: flex;
+}
+
+.intro-text {
+    width: 60%; 
+}
+
+.intro-text strong {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+
+.intro-text ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 0px;
+}
+
+.intro-text ul li {
+    margin-right: 20px;
+}
+
+.intro-text ul li figure {
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.intro-text ul li figure img {
+    height: 30px;
+    width: 30px;
+}
+
+.intro-text ul li figcaption {
+    font-size: 10px;
+    text-align: center;
+}
+
+.intro-photo {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Projects overview section */
+.projects {
+    height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.projects-content {
+    width: 900px; 
+    height: 450px;
+}
+
+.section-title {
+    height: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.section-expand {
+    height: 25px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.projects-overview {
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.projects-overview article {
+    background-color: antiquewhite;
+    height: 360px;
+    width: 430px;
+    border-radius: 20px;
+}
