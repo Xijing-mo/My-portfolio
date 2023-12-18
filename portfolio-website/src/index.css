@@ -52,7 +52,7 @@ nav {
     font-size: 40px;
 }
 
-.intro-text ul {
+.icon-list {
     list-style-type: none;
     display: flex;
     align-items: center;
@@ -60,22 +60,22 @@ nav {
     padding-left: 0px;
 }
 
-.intro-text ul li {
+.icon-list li {
     margin-right: 20px;
 }
 
-.intro-text ul li figure {
+.icon-list li figure {
     margin: 0px;
     display: flex;
     justify-content: center;
 }
 
-.intro-text ul li figure img {
+.icon-list img {
     height: 30px;
     width: 30px;
 }
 
-.intro-text ul li figcaption {
+.icon-list li figcaption {
     font-size: 10px;
     text-align: center;
 }
@@ -92,6 +92,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-bottom: 100px;
 }
 
 .projects-content {
@@ -120,8 +121,36 @@ nav {
 }
 
 .projects-overview article {
-    background-color: antiquewhite;
+    /* h-offset v-offset blur spread color */
+    box-shadow: 2px 2px 8px rgba(213, 212, 225, 0.5);
     height: 360px;
     width: 430px;
     border-radius: 20px;
+}
+
+/* contact section */
+.media-list {
+    margin: 15px;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 0px;
+}
+
+.media-list li {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.media-list img {
+    height: 30px;
+    width: 30px;
+}
+
+hr {
+    border-width: 1px 0px 0px 0px;
+    border-style: solid;
+    width: 100%;
+    color: rgb(213, 212, 225);
 }
