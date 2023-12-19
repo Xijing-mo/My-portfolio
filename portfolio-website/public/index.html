@@ -85,10 +85,10 @@
         <div style="height: 50%; width: 900px; display: flex; justify-content: center; align-items: center;">
           <hr>
           <ul class="media-list">
-            <li><img src="../src/GmailLogo.svg"></li>
-            <li><img src="../src/LinkedInLogo.svg"></li>
-            <li><img src="../src/InsLogo.svg"></li>
-            <li><img src="../src/WeChatLogo.svg"></li>
+            <li onclick="copyToClipboard('xcui11139@gmail.com', 'Gmail address')" style="cursor: pointer;" title="Copy Gmail Address"><img src="../src/GmailLogo.svg"></li>
+            <li onclick="copyToClipboard('https://www.linkedin.com/in/xijing-cui-681b091a1/', 'LinkedIn profile link')"  style="cursor: pointer;" title="Copy LinkedIn Profile Link"><img src="../src/LinkedInLogo.svg"></li>
+            <li onclick="copyToClipboard('xcui11139', 'Instagram username')"  style="cursor: pointer;" title="Copy Instagram username"><img src="../src/InsLogo.svg"></li>
+            <li onclick="copyToClipboard('xijing0411', 'WeChat username')"  style="cursor: pointer;" title="Copy Wechat username"><img src="../src/WeChatLogo.svg"></li>
           </ul>
           <hr>
         </div>
@@ -97,6 +97,19 @@
 
     <!-- for testing y scroll -->
     <!-- <div class="test" style="height: 400px;"></div> -->
+
+    <script>
+      function copyToClipboard(email, name) {
+        console.log("function called");
+        const textarea = document.createElement('textarea');
+        textarea.value = email;
+        document.body.appendChild(textarea);
+        textarea.select();
+        document.execCommand('copy');
+        document.body.removeChild(textarea);
+        alert(`${name} has been copied to the clipboard!`);
+      }
+    </script>
 
   </body>
 </html>
