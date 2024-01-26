@@ -2,8 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" type="text/css" href="..\src\index.css" />
+    <link rel="stylesheet" type="text/css" href="../src/index.css" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <script src="../src/copyToClipboard.js"></script>
     <title>React App (Portfolio)</title>
   </head>
 
@@ -74,15 +75,35 @@
         <div class="projects-content"> 
           <div class="section-title">Recent projects</div>
           <div class="projects-overview">
-            <article></article>
-            <article></article>
+            <article>
+              <div class="screenshot" style="background-image: url('../src/EcoCup.png');"></div>
+              <div class="project-intro">
+                <h1>Online Ordering Web App</h1>
+                <p>An online platform for ordering coffee, enabling customers to place orders and have their coffee delivered to a specified address.</p>
+              </div>
+              <div class="button-area">
+                <button>Video Demo</button>
+                <button>Source Code</button>
+              </div>
+            </article>
+            <article>
+              <div class="screenshot" style="background-image: url('../src/FruitApp.png');"></div>
+              <div class="project-intro">
+                <h1>Online Ordering Web App</h1>
+                <p>An online platform for ordering coffee, enabling customers to place orders and have their coffee delivered to a specified address.</p>
+              </div>
+              <div class="button-area">
+                <button>Video Demo</button>
+                <button>Source Code</button>
+              </div>
+            </article>
           </div>
           <div class="section-expand"><a href="#">View all</a></div>
         </div>
       </section>
 
-      <section style="height: 160px; display: flex; justify-content: center; align-items: center; flex-direction: row;">
-        <div style="height: 50%; width: 900px; display: flex; justify-content: center; align-items: center;">
+      <section class="contact">
+        <div class="contact-content">
           <hr>
           <ul class="media-list">
             <li onclick="copyToClipboard('xcui11139@gmail.com', 'Gmail address')" style="cursor: pointer;" title="Copy Gmail Address"><img src="../src/GmailLogo.svg"></li>
@@ -94,22 +115,5 @@
         </div>
       </section>
     </main>
-
-    <!-- for testing y scroll -->
-    <!-- <div class="test" style="height: 400px;"></div> -->
-
-    <script>
-      function copyToClipboard(email, name) {
-        console.log("function called");
-        const textarea = document.createElement('textarea');
-        textarea.value = email;
-        document.body.appendChild(textarea);
-        textarea.select();
-        document.execCommand('copy');
-        document.body.removeChild(textarea);
-        alert(`${name} has been copied to the clipboard!`);
-      }
-    </script>
-
   </body>
 </html>
